@@ -10,10 +10,14 @@ class ManipulatePixel {
   }
   cordinate2index(x, y) {return  ( 4 * ((this.width * y) + x) );} 
   isPixel(pixel) {
-    if (pixel.lenght != 4) {return false;}
-    for(i of pixel){
-        if (i < 0 || i > 255) {return false;}
+    if (pixel.length != 4) {
+      return false;
+    } else {
+      var i;
+      for (i of pixel) {
+          if (i < 0 || i > 255) {return false;}
       } return true;
+    }
   }
   getPixel(x, y) {
     var pixel = [];
@@ -30,7 +34,7 @@ class ManipulatePixel {
     }
   }
   setPixel(x, y, newPixel) {
-    if ( (this.isPixel(newPixel)) ) {
+    if ( !(this.isPixel(newPixel)) ) {
       return undefined;
     } else {
       var index = this.cordinate2index(x, y);
@@ -38,6 +42,7 @@ class ManipulatePixel {
         this.imgData.data[index + i ] = newPixel[i];
       } 
       this.ctx.putImageData(this.imgData, 0, 0); 
+      return true;
     }
 
   }
