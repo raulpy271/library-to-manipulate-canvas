@@ -3,7 +3,7 @@ class ManipulatePixel {
   constructor(canvas){
     this.cv = canvas;
     this.ctx = this.cv.getContext("2d");
-    this.imgData = this.ctx.getImageData(0, 0, cv.width, cv.height);
+    this.imgData = this.ctx.getImageData(0, 0, this.cv.width, this.cv.height);
     this.width = this.imgData.width;
     this.height = this.imgData.height;    
     this.pixels = this.imgData.data;
