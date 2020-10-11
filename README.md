@@ -2,11 +2,11 @@
 
 This is a simple JS library that manipulate the pixels of the canvas and apply filters to it. 
 
-### Manipulate pixels
+## How to use
 
 The lib is very light and use pure JS, so you can use in the browser without nodeJS only calling `<script src="/loadInWindow.js"></script>` in your html.
 
-## How to use
+### Manipulate pixels
 
 ```javascript
 
