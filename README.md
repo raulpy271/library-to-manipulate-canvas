@@ -1,10 +1,12 @@
 # Lib to manipulate the canvas
 
-This is a simple JS library that manipulate the pixels of the canvas and apply filters to it. The lib is very light and use pure JS, so you can use in the browser without nodeJS only calling `<script src="src/ManImageCan.js"></script>`.
-
-## How to use
+This is a simple JS library that manipulate the pixels of the canvas and apply filters to it. 
 
 ### Manipulate pixels
+
+The lib is very light and use pure JS, so you can use in the browser without nodeJS only calling `<script src="/loadInWindow.js"></script>` in your html.
+
+## How to use
 
 ```javascript
 
